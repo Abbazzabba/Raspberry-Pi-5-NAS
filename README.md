@@ -43,6 +43,7 @@ How to setup your own Network Attached Storage (NAS) on a Raspberry Pi using Ope
 
 - [Raspberry Pi 5 8GB Board](https://www.raspberrypi.com/products/raspberry-pi-5/)
 - [Raspberry Pi Power Supply](https://www.raspberrypi.com/products/power-supply/)
+- [SmartQ C368 USB 3.0 Card Reader](https://www.amazon.com/SmartQ-C368-Multi-Card-Compatible-Supports/dp/B06Y1G18KS/ref=sr_1_2_sspa?crid=19HQN7PU8JP3P&dib=eyJ2IjoiMSJ9.aZ5CyI1seaCTFVUzT0NlJmfjg7SSHll_hQAdXHtwrSBwKkbCL6ckRohEQnsInJFQWmE6hQR3_BpnnJvcb2Cdw0awVMcDG_EGuEvPTnfbm9PPgalPAPpDoxxeNZlnSEem5vg3b4Vas1ItTEVJE8cVNUBWfH3OlzjrlxCBZ1pW4tpVNQhxC0iqVA92NfBV_FCmC9GEnvNcSZfgAh5gzOK_tJp0vJ2PW50Whu2Rg14Dq-8.eKGfn-GLuZlHcV7JqQHPoTmUyelh2tAD_G7z_BEQlB4&dib_tag=se&keywords=micro%2Bsd%2Bcard%2Breader&qid=1754597129&sprefix=micro%2Bsd%2Bcard%2Breader%2Caps%2C153&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1)
 - [Micro SD Card 32GB (SanDisc)](https://www.amazon.com/SanDisk-Ultra-microSDXC-Memory-Adapter/dp/B073JWXGNT/ref=sr_1_3?crid=HSH4172HDNGD&dib=eyJ2IjoiMSJ9.jpP4EOL63nLBVDLlKgJCTaPW2W0VsqK5yZ_7voVvVaqushoTQ_rsy881Mun5K74Pz9U24p2IZJsyNSd0bSRDOB7FM3xhx-XPIm_Crvt0_c3y4i8oYCleCovdmtek6Ai97v23xIa65KK8bbifO6YYYK1OFoQEqmZPBs9T1IjaSa_pFkPRMJr8an3dB9DBZJUldoL8jPZpC0Bg-6aD-qSEFnhKLupj9H6L8yhMVZeVtOg.th7dIwozbiIPur_Wz1UK-8p1p08jstssSPlcPhPHfzI&dib_tag=se&keywords=scan%2Bdisk%2Bmicro%2Bsd%2Bcard%2B32gb&qid=1754592882&sprefix=scan%2Bdisk%2Bmicro%2Bsd%2Bcard%2B32gb%2Caps%2C114&sr=8-3&th=1)
 - [My Passport - 5TB](https://www.westerndigital.com/products/portable-drives/wd-my-passport-usb-3-0-hdd?sku=WDBPKJ0050BBK-WESN)
 - [Vilros Raspberry Pi 5 8GB (Aluminum Black)](https://www.amazon.com/dp/B0CTT6X2ZJ?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1)
@@ -62,14 +63,21 @@ How to setup your own Network Attached Storage (NAS) on a Raspberry Pi using Ope
 
 - *Implementing a Network-Attached Storage (NAS) system using OpenMediaVault requires a command-line interface (CLI) operating system.
 
-## Steps
+### Steps
 
-- Due to using the Vilros Raspberry Pi 5 kit, I put my board together with the case and accessories I would need for the project.
+## Step 1 (Putting Together Raspberry Pi)
+- Due to using the Vilros Raspberry Pi 5 kit, my first step was to put my board together with the case and accessories I would need for the project.
 ![kit](Images/RaspberryPi2.jpeg)
 ![kit2](Images/RaspberryPi.jpeg)
 
+## Step 2 (Imaging MicroSD)
+- Install [Raspberry Pi Imager](https://www.raspberrypi.com/products/m2-hat-plus/), this will allow us to put Raspberry Pi OS Lite (64-bit) onto the microSD card
+![Imager](Images/RaspberryPiImager.jpeg)
+- Select the appropriate Raspberry Pi model, Raspberry Pi OS Lite (64-bit) is found in the category of other, then select the microSD card to load the software onto.
 
-
+## Step 3 (Downloading Putty)
+- While there are different ways to secure shell (SSH) into the Raspberry Pi 5, the means that we will access the Raspberry Pi 5 will be through Putty.
+- Download [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 
 
 
