@@ -79,15 +79,53 @@ How to setup your own Network Attached Storage (NAS) on a Raspberry Pi using Ope
 - Download [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 
 ## Step 4 (Launching Putty)
-- You will have to know the IP address for the Raspberry Pi within your network, I simply connected a monitor and keyboard and ran the command 
+- You will have to know the IP address for the Raspberry Pi within your network, I simply connected a monitor and keyboard to my Raspberry Pi 5, logged into it, with the user name and password I created using the imager and ran the command 
 ```bash
 # ifconfig
 ```
-- After you know the IP address launch Putty
-![putty](Images/putty.png)
+- After you know the IP address launch Putty from your main PC
+![putty](Images/Putty.png)
+- Put the IP address in the apropriate field and launch.
+- *I saved my IP address into my Putty to allow me to have ease of access.
 
+## Step 5 (Updating Raspberry Pi Software)
+- Once you have SSH into the Raspberry Pi updates are needed, the following commands are recommended:
+```bash
+# sudo apt update
+```
+```bash
+# sudo apt-upgrade
+```
+```bash
+# sudo reboot
+```
+-*Each command can take up to several minutes to complete.
 
+## Step 6 (OMV 'Preinstaller')
+-This step will utilize a simple github script
+```bash
+# wget -O -https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/preinstall | sudo bash
+```
+-*Script can take up to several minutes to complete.
 
+## Step 7 (OMV 'Installer')
+-This step will utilize another simple github script
+```bash
+# wget -O -https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/install | sudo bash
+```
+-*Script can take up to several minutes to complete. This is where you can either watch the script run its course to see if anything shows red meaning it didnt install correctly, or you can go make yourself a snack.
+```bash
+# sudo reboot
+```
+
+## Step 8 (OMV First Launch)
+-In your favorite web-browser, input the IP address of the Raspberry Pi, it will take you to the home screen of OpenMediaVault.
+![OMV](Images/OpenMediaVault.png)
+-*Default User: admin
+-*Default Password: openmediavault
+
+-[Troubleshooting](https://docs.openmediavault.org/en/latest/troubleshooting.html)
+-*I had a hard time my first time logging in, rebooted the Raspberry Pi and it worked fine.
 
 
 ### SSH
