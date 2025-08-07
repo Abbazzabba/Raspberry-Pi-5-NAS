@@ -91,7 +91,7 @@ How to setup your own Network Attached Storage (NAS) on a Raspberry Pi using Ope
 ## Step 3 (Downloading Putty)
 - While there are different ways to secure shell (SSH) into the Raspberry Pi 5, the means that we will access the Raspberry Pi 5 will be through Putty.
 - If you choose to use a different means, skip to [Step 5](#Step-5-Updating-Raspberry-Pi-Software).
-- Download [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
+- Download [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).
 
 ## Step 4 (Launching Putty)
 - You will have to know the IP address for the Raspberry Pi within your network, I simply connected a monitor and keyboard to my Raspberry Pi 5, logged into it, with the user name and password I created using the imager and ran the command 
@@ -117,14 +117,14 @@ How to setup your own Network Attached Storage (NAS) on a Raspberry Pi using Ope
 - *Each command can take up to several minutes to complete.
 
 ## Step 6 (OMV 'Preinstaller')
-- This step will utilize a simple github script
+- This step will utilize the following github script:
 ```bash
 # wget -O -https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/preinstall | sudo bash
 ```
 - *Script can take up to several minutes to complete.
 
 ## Step 7 (OMV 'Installer')
-- This step will utilize another simple github script
+- This step will utilize the following github script:
 ```bash
 # wget -O -https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/install | sudo bash
 ```
@@ -140,8 +140,10 @@ How to setup your own Network Attached Storage (NAS) on a Raspberry Pi using Ope
 - *Default Password: openmediavault
 
 - [Troubleshooting](https://docs.openmediavault.org/en/latest/troubleshooting.html)
-- *I had a hard time my first time logging in, rebooted the Raspberry Pi and it worked fine.
+- *I initially encountered difficulties logging in the first time, receiving an incorrect username or password error. After rebooting the Raspberry Pi, the issue was resolved, and I was able to log in successfully.
 
+- ## Step 9 (File System)
+-  Prior to establishing the file system we will need to wipe the HDD, OpenMediaVault requires this for mounting purposes. In the (Storage) section, (Disks), select the (HDD), and choose wipe, "quick" will meet the requirements unless you want to conduct a "secure" wipe
 
 ### SSH
 
