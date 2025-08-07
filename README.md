@@ -1,11 +1,11 @@
-# Raspberry-Pi-5-NAS
+# Raspberry Pi 5 NAS with Open Media Vault
 How to setup your own Network Attached Storage (NAS) on a Raspberry Pi using OpenMediaVault
 
 ## Preview
 
 ### Dashboard
 
-![dashboard](OpenMediaVault3.png)
+![dashboard](images/OpenMediaVault3.png)
 
 ### Monitoring
 
