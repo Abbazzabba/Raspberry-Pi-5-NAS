@@ -90,6 +90,7 @@ How to setup your own Network Attached Storage (NAS) on a Raspberry Pi using Ope
 
 ## Step 3 (Downloading Putty)
 - While there are different ways to secure shell (SSH) into the Raspberry Pi 5, the means that we will access the Raspberry Pi 5 will be through Putty.
+- If you choose to use a different means, skip to [Step 5](#Step-5-Updating-Raspberry-Pi-Software).
 - Download [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 
 ## Step 4 (Launching Putty)
@@ -103,7 +104,7 @@ How to setup your own Network Attached Storage (NAS) on a Raspberry Pi using Ope
 - *I saved my IP address into my Putty to allow me to have ease of access.
 
 ## Step 5 (Updating Raspberry Pi Software)
-- Once you have SSH into the Raspberry Pi updates are needed, the following commands are recommended:
+- Once you have SSH connection into the Raspberry Pi updates are recommended, the following commands are for updates and upgrades to the software:
 ```bash
 # sudo apt update
 ```
