@@ -143,7 +143,7 @@ How to setup your own Network Attached Storage (NAS) on a Raspberry Pi using Ope
 - *I initially encountered difficulties logging in the first time, receiving an incorrect username or password error. After rebooting the Raspberry Pi, the issue was resolved, and I was able to log in successfully.
 
 - ## Step 9 (File System)
--  Prior to establishing the file system we will need to wipe the HDD, OpenMediaVault requires this for mounting purposes. In the (Storage) section, (Disks), select the (HDD), and choose wipe, "quick" will meet the requirements unless you want to conduct a "secure" wipe
+-  Prior to establishing the file system we will need to wipe the HDD, OpenMediaVault requires this for mounting purposes. In the *Storage* section, *Disks*, select the *HDD*, and choose wipe, "quick" will meet the requirements unless you want to conduct a "secure" wipe
 
 ### SSH
 
