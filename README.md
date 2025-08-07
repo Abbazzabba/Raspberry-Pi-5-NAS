@@ -15,6 +15,9 @@ How to setup your own Network Attached Storage (NAS) on a Raspberry Pi using Ope
 
 - [Hardware](#hardware)
 - [Software](#software)
+- [Steps](#software)
+  * [Step 1](#step1)
+  * [Step 2](#step2)
   * [SSH](#ssh)
 - [SMB Shares](#smb-shares)
   * [Format Drives](#format-drives)
@@ -106,7 +109,7 @@ How to setup your own Network Attached Storage (NAS) on a Raspberry Pi using Ope
 ```bash
 # wget -O -https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/preinstall | sudo bash
 ```
--*Script can take up to several minutes to complete.
+- *Script can take up to several minutes to complete.
 
 ## Step 7 (OMV 'Installer')
 - This step will utilize another simple github script
