@@ -62,6 +62,20 @@ How to setup your own Network Attached Storage (NAS) on a Raspberry Pi using Ope
 
 - *Implementing a Network-Attached Storage (NAS) system using OpenMediaVault requires a command-line interface (CLI) operating system.
 
+## Steps
+
+- Due to using the Vilros Raspberry Pi 5 kit, I put my board together with the case and accessories I would need for the project.
+
+
+
+
+
+
+
+
+
+
+
 ### SSH
 
 More documentation to [enable SSH](https://www.raspberrypi.org/documentation/remote-access/ssh/README.md) or [generate Keys](https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md).
