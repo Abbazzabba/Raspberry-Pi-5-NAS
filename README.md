@@ -5,7 +5,7 @@ How to setup your own Network Attached Storage (NAS) on a Raspberry Pi using Ope
 
 ### Dashboard
 
-![dashboard](screenshots/dashboard.jpg)
+![dashboard](OpenMediaVault3.png)
 
 ### Monitoring
 
