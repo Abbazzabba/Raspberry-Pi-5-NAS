@@ -74,7 +74,7 @@ This project involves setting up a cost-effective Network Attached Storage (NAS)
 ```bash
 # hostname -I
 ```
-- This command will display the IP address(es) assigned to your Raspberry Pi. .
+- This command will display the IP address(es) assigned to your Raspberry Pi.
 - Alternatively, you can also run:
 ```bash
 # ifconfig
@@ -89,20 +89,24 @@ This project involves setting up a cost-effective Network Attached Storage (NAS)
 - *I saved my IP address into my Putty to allow me to have ease of access.
 
 ## Step 5 (Updating Raspberry Pi Software)
-- Once you have SSH connection into the Raspberry Pi updates are recommended, the following commands are for updates and upgrades to the software:
+- Once you have SSH access to the Raspberry Pi, it's recommended to update the system packages to ensure you have the latest security patches and software improvements. The standard commands to update and upgrade the Raspberry Pi OS are:
+
 ```bash
 # sudo apt update
-```
-```bash
-# sudo apt-upgrade
-```
-```bash
-# sudo reboot
+# sudo apt upgrade -y
+# sudo apt full-upgrade -y
+# sudo apt autoremove -y
 ```
 - *Each command can take up to several minutes to complete.
+- Explanation:
+- sudo apt update — Refreshes the list of available packages and their versions.
+- sudo apt upgrade -y — Upgrades all the installed packages to their latest versions.
+- sudo apt full-upgrade -y — Performs a more complete upgrade, including handling of package dependencies.
+- sudo apt autoremove -y — Removes unnecessary packages no longer required by the system.
+
 
 ## Step 6 (OMV 'Preinstaller')
-- This step will utilize the following github script:
+- In this step, we will employ a specialized script hosted on GitHub to automate or facilitate a critical portion of the NAS setup process on the Raspberry Pi 5. This script serves as a pre-configured and tested set of commands or configuration instructions designed to streamline complex or repetitive tasks, reducing manual errors and saving significant setup time.
 ```bash
 # wget -O -https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/preinstall | sudo bash
 ```
@@ -119,7 +123,7 @@ This project involves setting up a cost-effective Network Attached Storage (NAS)
 ```
 
 ## Step 8 (OMV First Launch)
-- In your favorite web-browser, input the IP address of the Raspberry Pi, it will take you to the home screen of OpenMediaVault.
+- In your preferred web browser, enter the Raspberry Pi’s IP address into the address bar to access the OpenMediaVault home screen.
 
 ![OMV](Images/OpenMediaVault.png)
 - *Default User: admin
