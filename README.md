@@ -40,7 +40,7 @@ How to setup your own Network Attached Storage (NAS) on a Raspberry Pi using Ope
 - [Raspberry Pi M.2 HAT+](https://www.raspberrypi.com/products/m2-hat-plus/)
 
 
-- *I utilized the [Vilros Raspberry Pi 5 8GB (Aluminum Black)](https://www.amazon.com/dp/B0CTT6X2ZJ?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1) Kit, which included the power supply, microSD card, and various additional accessories as documented in the accompanying photographs and link above. Additionally, I incorporated external hard drives that were available from inventory within my premises.
+- *I utilized the [Vilros Raspberry Pi 5 8GB (Aluminum Black)](https://www.amazon.com/dp/B0CTT6X2ZJ?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1) Kit, which included a power supply, microSD card, and various additional accessories. Additionally, I incorporated external hard drives that were available from my personal inventory within my premises.
 
 ## Software
 
