@@ -23,7 +23,7 @@ This project involves setting up a cost-effective Network Attached Storage (NAS)
   * [Step 9-File System](#Step-9-File-System)
   * [Step 10-Shared Folder](#Step-10-Shared-Folders)
   * [Step 11-Services](#Step-11-Services)
-  * [Step 12-Shared Folders](#Step-12-Shared-Folders)
+  * [Step 12-SMB Shares](#Step-12-SMB-Shares)
   * [Step 13-Accessing](#Step-13-Access)
 - [Additional Information](#Additional-information)
 
@@ -149,7 +149,7 @@ This project involves setting up a cost-effective Network Attached Storage (NAS)
 
 - *You can enable NFS if there is a chance of a Linux based system being connected to the network.
 
-- ## Step 12 (Shared Folders)
+- ## Step 12 (SMB Shares)
 - Within **Services**, **SMB/CIFS**, go into **Shares**, **Create**, select the shared folder that was created, **Public** will allow guests to access I left mine set to no, Time Machine Support would be a good feature for MAC users to enable, enable **Recycling bin**
 - The rest of the options I left as default.
 - **Save** is located at the very bottom again.
