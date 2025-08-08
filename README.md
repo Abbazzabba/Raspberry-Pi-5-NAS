@@ -53,15 +53,19 @@ This project involves setting up a cost-effective Network Attached Storage (NAS)
 # Steps
 
 ## Step 1 (Putting Together Raspberry Pi 5)
-- Due to using the Vilros Raspberry Pi 5 kit, my first step was to put my board together with the case and accessories I would need for the project.
+- The initial step involved assembling the Vilros Raspberry Pi 5 kit, including integrating the Raspberry Pi board with the provided case and connecting the necessary accessories essential for the successful execution of the project.
 
 ![kit](Images/RaspberryPi.png)
 
 ## Step 2 (Imaging MicroSD)
-- Install [Raspberry Pi Imager](https://www.raspberrypi.com/products/m2-hat-plus/), this will allow you to put Raspberry Pi OS Lite (64-bit) onto the microSD card
+- To begin, install the [Raspberry Pi Imager](https://www.raspberrypi.com/products/m2-hat-plus/) application on your computer. This tool facilitates the straightforward installation of operating system images onto microSD cards. Using Raspberry Pi Imager, select the Raspberry Pi OS Lite (64-bit) image from the available options and write it to your microSD card, preparing the card for use with your Raspberry Pi.
 
 ![Imager](Images/RaspberryPiImager.png)
-- Select the appropriate Raspberry Pi model, Raspberry Pi OS Lite (64-bit) is found in the category of other, then select the microSD card to load the software onto.
+- Begin by launching the Raspberry Pi OS Imager software. Within the application, first select the correct Raspberry Pi model to ensure compatibility with your hardware. For this project, choose the Raspberry Pi OS Lite (64-bit) image, which is located under the “Other” category in the operating system selection menu. This lightweight version is optimized for headless or minimal installations, ideal for running OpenMediaVault without unnecessary graphical overhead.
+
+- Next, carefully select the target microSD card from the list of available storage devices connected to your computer. This microSD card will serve as the primary boot medium for the Raspberry Pi. Verify that the selected microSD card has sufficient storage capacity and no important data remains, as the imaging process will overwrite all existing data on the card.
+
+- Once the OS image and target device are selected, proceed with writing the image onto the microSD card, which will prepare it for deployment in the Raspberry Pi 5 NAS build.
 
 ## Step 3 (Downloading Putty)
 - While there are several methods available to establish a secure shell (SSH) connection to the Raspberry Pi 5, in this setup we will use PuTTY as the chosen client for remote access and management.
