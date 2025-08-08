@@ -148,7 +148,7 @@ How to setup your own Network Attached Storage (NAS) on a Raspberry Pi using Ope
 
 ![storage](Images/Services.png)
 
-- *You can enable NFS if there is a chance of a Linux based system being connected to the system.
+- *You can enable NFS if there is a chance of a Linux based system being connected to the network.
 
 - ## Step 12 (Shared Folders)
 - Within **Services**, **SMB/CIFS**, go into **Shares**, **Create**, select the shared folder that was created, **Public** will allow guests to access I left mine set to no, Time Machine Support would be a good feature for MAC users to enable, enable **Recycling bin**
