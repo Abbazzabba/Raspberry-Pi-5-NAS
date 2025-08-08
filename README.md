@@ -12,7 +12,7 @@ How to setup your own Network Attached Storage (NAS) on a Raspberry Pi using Ope
 - [Hardware](#hardware)
 - [Software](#software)
 - [Steps](#software)
-  * [Step 1 Putting Together Raspberry Pi](#Step-1-Putting-Together-Raspberry-Pi)
+  * [Step 1 Putting Together Raspberry Pi 5](#Step-1-Putting-Together-Raspberry-Pi-5)
   * [Step 2 Imaging MicroSD](#Step-2-Imaging-MicroSD)
   * [Step 3 Downloading Putty](#Step-3-Downloading-Putty)
   * [Step 4 Launching Putty](#Step-4-Launching-Putty)
@@ -53,7 +53,7 @@ How to setup your own Network Attached Storage (NAS) on a Raspberry Pi using Ope
 
 # Steps
 
-## Step 1 (Putting Together Raspberry Pi)
+## Step 1 (Putting Together Raspberry Pi 5)
 - Due to using the Vilros Raspberry Pi 5 kit, my first step was to put my board together with the case and accessories I would need for the project.
 
 ![kit](Images/RaspberryPi.png)
