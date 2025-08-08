@@ -68,9 +68,9 @@ This project involves setting up a cost-effective Network Attached Storage (NAS)
 - Once the OS image and target device are selected, proceed with writing the image onto the microSD card, which will prepare it for deployment in the Raspberry Pi 5 NAS build.
 
 ## Step 3 (Downloading Putty)
-- While there are several methods available to establish a secure shell (SSH) connection to the Raspberry Pi 5, in this setup we will use PuTTY as the chosen client for remote access and management.
-- Download [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).
-- If you choose to use a different means, skip to [Step 5](#Step-5-Updating-Raspberry-Pi-Software).
+- Although multiple methods exist to establish a Secure Shell (SSH) connection to the Raspberry Pi 5, this guide uses PuTTY as the preferred client for remote access and system management.
+- Download and install [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) from its official website to proceed with SSH connectivity.
+- If you opt to use an alternative SSH client or method, you may skip directly to [Step 5](#Step-5-Updating-Raspberry-Pi-Software).
 
 
 ## Step 4 (Launching Putty)
@@ -117,7 +117,7 @@ This project involves setting up a cost-effective Network Attached Storage (NAS)
 - *Script can take up to several minutes to complete.
 
 ## Step 7 (OMV 'Installer')
-- This step will utilize the following github script:
+- This step will utilize another github script:
 ```bash
 # wget -O -https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/install | sudo bash
 ```
@@ -137,7 +137,7 @@ This project involves setting up a cost-effective Network Attached Storage (NAS)
 - *I initially encountered difficulties logging in the first time, receiving an incorrect username or password error. After rebooting the Raspberry Pi, the issue was resolved, and I was able to log in successfully.
 
 - ## Step 9 (File System)
--  Prior to establishing the file system we will *need* to **wipe** the HDD, OpenMediaVault requires this for mounting purposes. In the **Storage** section, **Disks**, select the **HDD**, and choose wipe, *quick* will meet the requirements unless you want to conduct a *secure* wipe.
+-  Prior to configuring the file system, it is essential to wipe the hard drive, as OpenMediaVault requires a clean disk to properly mount it. Navigate to the **Storage** section and select **Disks**. From the list, choose the target HDD and initiate the wipe process. A *quick* wipe is sufficient for this purpose; however, if you prefer enhanced data security, you may opt for a *secure* wipe instead.
 
 ![storage](Images/storage.png)
 
@@ -147,29 +147,31 @@ This project involves setting up a cost-effective Network Attached Storage (NAS)
 ![storage](Images/Mounted.png)
 
 - ## Step 10 (Shared Folders)
-- Staying in the **Storage** area, in **Shared Folders**, **Create**, give the directory a name, select the file system that was just created, any additional paths required, change permissions as needed, add tags.
-
+- In the OpenMediaVault web interface, navigate to the **Storage** section and select **Shared Folders** to create a new network share. Click the *Create* button and provide a clear, descriptive name for the folder.
+- Then, select the appropriate file system or storage device that you previously formatted and prepared.
+- Specify the directory path where the shared folder will reside, creating subdirectories if needed. Adjust the folder’s ownership and access permissions to suit your security requirements, setting user or group rights for read/write or read-only access.
 ![storage](Images/SharedFolder.png)
-
+  
 ![storage](Images/SharedFolder2.png)
-
+- *You may also add tags or additional descriptions to help identify and organize the share within your NAS environment.
+ 
 - ## Step 11 (Services)
-- Putting the final touches on the NAS would be establishing **Services**, that could be NFS if you are connecting this to a Linux/Unix system or SMB/CIFS for Windows/MAC
-- I will be setting this up for SMB as mine will be connected to a Windows network.
-- In the **Services**, **SMB/CIFS**, in settings making sure its enabled, enable the **recycling bin** incase something is deleted it will create a buffer before its deleted forever.
-- If its for an older system/network there is a setting within **Advanced Settings** for enabling NetBIOS and WINS server, I will not be enabling those.
-- **Save** is located at the very bottom.
-- **Accept** pending changes on the yellow banner.
+- To complete the NAS setup, the next step is to configure the Services according to your network environment. For Linux or Unix clients, the NFS service is appropriate, whereas for Windows or macOS clients, enabling SMB/CIFS is recommended. In this guide, we'll focus on setting up SMB/CIFS, as the NAS will be integrated into a Windows network.
+- Navigate to the Services section and select SMB/CIFS. Ensure the service is enabled by toggling the activation setting. It is also advisable to enable the Recycling Bin feature, which provides a safeguard by temporarily storing deleted files before they are permanently removed, helping prevent accidental data loss.
+- For older networks or legacy systems, you have the option within Advanced Settings to enable NetBIOS and the WINS server protocols; however, these are generally unnecessary for most modern setups and will be left disabled in this configuration.
+- After making all necessary changes, scroll to the bottom of the page and click Save to apply your settings.
+- Finally, confirm and apply the changes by clicking Accept on the yellow notification banner that appears, ensuring the new SMB service configuration is activated.
 
 ![storage](Images/Services.png)
 
 - *You can enable NFS if there is a chance of a Linux based system being connected to the network.
 
 - ## Step 12 (SMB Shares)
-- Within **Services**, **SMB/CIFS**, go into **Shares**, **Create**, select the shared folder that was created, **Public** will allow guests to access I left mine set to no, Time Machine Support would be a good feature for MAC users to enable, enable **Recycling bin**
-- The rest of the options I left as default.
-- **Save** is located at the very bottom again.
-- **Accept** pending changes on the yellow banner.
+- To configure SMB shares, navigate to Services and select SMB/CIFS, then go to the Shares tab and click Create to add a new share. In the share creation dialog, select the shared folder you previously created as the target folder.
+- The Public setting controls guest access; enabling it allows network guests to access the share without authentication, but for security, it is often best to leave this set to No, as in this configuration.
+- If you are setting up the NAS for macOS users, enabling Time Machine Support can be beneficial for seamless backup integration. Additionally, enable the Recycling Bin feature to provide a safety buffer by temporarily storing deleted files before permanent removal. The other share options can be left at their default settings.
+- After configuring the share, scroll down and click Save to apply the settings.
+- Finally, confirm the configuration by clicking Accept on the yellow banner that appears to process pending changes and activate your SMB share.
 
 ![storage](Images/SharedFolders3.png)
 
