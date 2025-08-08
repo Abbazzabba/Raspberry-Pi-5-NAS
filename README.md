@@ -1,4 +1,4 @@
-# Raspberry Pi 5 NAS with Open Media Vault
+# PiVault: DIY Network Storage with OpenMediaVault
 This project involves setting up a cost-effective Network Attached Storage (NAS) solution using a Raspberry Pi 5 (8GB model) and the OpenMediaVault (OMV) operating system. By leveraging affordable and readily available hardware, such as a microSD card and external hard drives, the project guides users through the process of imaging the operating system, configuring NAS features, and managing file sharing services. The resulting system provides reliable, customizable network storage for personal or small office use, utilizing open-source software and compact hardware for maximum flexibility and efficiency.
 
 ## Preview
