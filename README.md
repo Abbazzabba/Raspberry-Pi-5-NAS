@@ -64,15 +64,24 @@ This project involves setting up a cost-effective Network Attached Storage (NAS)
 - Select the appropriate Raspberry Pi model, Raspberry Pi OS Lite (64-bit) is found in the category of other, then select the microSD card to load the software onto.
 
 ## Step 3 (Downloading Putty)
-- While there are different ways to secure shell (SSH) into the Raspberry Pi 5, the means that we will access the Raspberry Pi 5 will be through Putty.
+- While there are several methods available to establish a secure shell (SSH) connection to the Raspberry Pi 5, in this setup we will use PuTTY as the chosen client for remote access and management.
 - Download [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).
 - If you choose to use a different means, skip to [Step 5](#Step-5-Updating-Raspberry-Pi-Software).
 
 
 ## Step 4 (Launching Putty)
-- You will have to know the IP address for the Raspberry Pi within your network, I simply connected a monitor and keyboard to my Raspberry Pi 5, logged into it, with the user name and password I created using the imager and ran the command 
+- To find the IP address of your Raspberry Pi 5 on your network after logging in via connected monitor and keyboard, you can run the following command in the terminal:
+```bash
+# hostname -I
+```
+This command will display the IP address(es) assigned to your Raspberry Pi. Use the IPv4 address listed (usually something like 192.168.x.x or 10.x.x.x) to access the device remotely (for example, via SSH with PuTTY from your PC).
+Alternatively, you can also run:
 ```bash
 # ifconfig
+```
+or
+```bash
+# ip addr show
 ```
 - After you know the IP address launch Putty from your main PC
 
