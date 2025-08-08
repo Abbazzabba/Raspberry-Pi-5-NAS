@@ -12,19 +12,19 @@ How to setup your own Network Attached Storage (NAS) on a Raspberry Pi using Ope
 - [Hardware](#hardware)
 - [Software](#software)
 - [Steps](#software)
-  * [Step 1](#Step-1-Putting-Together-Raspberry-Pi)
-  * [Step 2](#Step-2-Imaging-MicroSD)
-  * [Step 3](#Step-3-Downloading-Putty)
-  * [Step 4](#Step-4-Launching-Putty)
-  * [Step 5](#Step-5-Updating-Raspberry-Pi-Software)
-  * [Step 6](#Step-6-OMV-'Preinstaller')
-  * [Step 7](#Step-7-OMV-'Installer')
-  * [Step 8](#Step-8-OMV-First-Launch)
-  * [Step 9](#Step-9-File-System)
-  * [Step 10](#Step-10-Shared-Folders)
-  * [Step 11](#Step-11-Services)
-  * [Step 12](#Step-12-Shared-Folders)
-  * [Step 13](#Step-13-Access)
+  * [Step 1 Putting Together Raspberry Pi](#Step-1-Putting-Together-Raspberry-Pi)
+  * [Step 2 Imaging MicroSD](#Step-2-Imaging-MicroSD)
+  * [Step 3 Downloading Putty](#Step-3-Downloading-Putty)
+  * [Step 4 Launching Putty](#Step-4-Launching-Putty)
+  * [Step 5 Updating Raspberry Pi Software](#Step-5-Updating-Raspberry-Pi-Software)
+  * [Step 6 OMV 'Preinstaller'](#Step-6-OMV-'Preinstaller')
+  * [Step 7 OMV 'Installer'](#Step-7-OMV-'Installer')
+  * [Step 8 OMV First Launch](#Step-8-OMV-First-Launch)
+  * [Step 9 File System](#Step-9-File-System)
+  * [Step 10 Shared Folder](#Step-10-Shared-Folders)
+  * [Step 11 Services](#Step-11-Services)
+  * [Step 12 Shared Folders](#Step-12-Shared-Folders)
+  * [Step 13 Accessing](#Step-13-Access)
 - [Additional Information](#Additional-information)
 
 ## Hardware
@@ -140,7 +140,7 @@ How to setup your own Network Attached Storage (NAS) on a Raspberry Pi using Ope
 - ## Step 11 (Services)
 - Putting the final touches on the NAS would be establishing **Services**, that could be NFS if you are connecting this to a Linux/Unix system or SMB/CIFS for Windows/MAC
 - I will be setting this up for SMB as mine will be connected to a Windows network.
-- In the **Servies**, **SMB/CIFS**, in settings making sure its enabled, enable the **recycling bin** incase something is deleted it will create a buffer before its deleted forever.
+- In the **Services**, **SMB/CIFS**, in settings making sure its enabled, enable the **recycling bin** incase something is deleted it will create a buffer before its deleted forever.
 - If its for an older system/network there is a setting within **Advanced Settings** for enabling NetBIOS and WINS server, I will not be enabling those.
 - **Save** is located at the very bottom.
 - **Accept** pending changes on the yellow banner.
