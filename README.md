@@ -74,7 +74,7 @@ This project involves setting up a cost-effective Network Attached Storage (NAS)
 ```bash
 # hostname -I
 ```
-- This command will display the IP address(es) assigned to your Raspberry Pi. Use the IPv4 address listed (usually something like 192.168.x.x or 10.x.x.x) to access the device remotely (for example, via SSH with PuTTY from your PC).
+- This command will display the IP address(es) assigned to your Raspberry Pi. .
 - Alternatively, you can also run:
 ```bash
 # ifconfig
@@ -83,10 +83,9 @@ This project involves setting up a cost-effective Network Attached Storage (NAS)
 ```bash
 # ip addr show
 ```
-- After you know the IP address launch Putty from your main PC
+- Use the IPv4 address listed (usually something like 192.168.x.x or 10.x.x.x) to access the device via SSH with PuTTY from your PC)
 
 ![putty](Images/Putty.png)
-- Put the IP address in the apropriate field and launch.
 - *I saved my IP address into my Putty to allow me to have ease of access.
 
 ## Step 5 (Updating Raspberry Pi Software)
