@@ -173,3 +173,5 @@ How to setup your own Network Attached Storage (NAS) on a Raspberry Pi using Ope
 - [Enable SSH on Raspberry Pi](https://www.raspberrypi.org/documentation/remote-access/ssh/README.md)
 
 - [Manual Raspberry Pi OS install](https://www.raspberrypi.com/software/)
+
+- [Youtube Video The ultimate Raspberry Pi NAS build for 2025!](https://www.youtube.com/watch?v=xYqkfYmJJ6w&t=562s)
