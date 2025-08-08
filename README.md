@@ -150,6 +150,7 @@ This project involves setting up a cost-effective Network Attached Storage (NAS)
 - In the OpenMediaVault web interface, navigate to the **Storage** section and select **Shared Folders** to create a new network share. Click the *Create* button and provide a clear, descriptive name for the folder.
 - Then, select the appropriate file system or storage device that you previously formatted and prepared.
 - Specify the directory path where the shared folder will reside, creating subdirectories if needed. Adjust the folder’s ownership and access permissions to suit your security requirements, setting user or group rights for read/write or read-only access.
+
 ![storage](Images/SharedFolder.png)
   
 ![storage](Images/SharedFolder2.png)
