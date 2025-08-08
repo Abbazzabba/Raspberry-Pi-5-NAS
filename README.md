@@ -73,7 +73,7 @@ How to setup your own Network Attached Storage (NAS) on a Raspberry Pi using Ope
 # ifconfig
 ```
 - After you know the IP address launch Putty from your main PC
-- ![putty](Images/Putty.png)
+  ![putty](Images/Putty.png)
 - Put the IP address in the apropriate field and launch.
 - *I saved my IP address into my Putty to allow me to have ease of access.
 
