@@ -55,11 +55,13 @@ How to setup your own Network Attached Storage (NAS) on a Raspberry Pi using Ope
 
 ## Step 1 (Putting Together Raspberry Pi)
 - Due to using the Vilros Raspberry Pi 5 kit, my first step was to put my board together with the case and accessories I would need for the project.
--![kit](Images/RaspberryPi.png)
+
+![kit](Images/RaspberryPi.png)
 
 ## Step 2 (Imaging MicroSD)
 - Install [Raspberry Pi Imager](https://www.raspberrypi.com/products/m2-hat-plus/), this will allow us to put Raspberry Pi OS Lite (64-bit) onto the microSD card
--![Imager](Images/RaspberryPiImager.png)
+
+![Imager](Images/RaspberryPiImager.png)
 - Select the appropriate Raspberry Pi model, Raspberry Pi OS Lite (64-bit) is found in the category of other, then select the microSD card to load the software onto.
 
 ## Step 3 (Downloading Putty)
@@ -73,7 +75,8 @@ How to setup your own Network Attached Storage (NAS) on a Raspberry Pi using Ope
 # ifconfig
 ```
 - After you know the IP address launch Putty from your main PC
--![putty](Images/Putty.png)
+
+![putty](Images/Putty.png)
 - Put the IP address in the apropriate field and launch.
 - *I saved my IP address into my Putty to allow me to have ease of access.
 
@@ -109,6 +112,7 @@ How to setup your own Network Attached Storage (NAS) on a Raspberry Pi using Ope
 
 ## Step 8 (OMV First Launch)
 - In your favorite web-browser, input the IP address of the Raspberry Pi, it will take you to the home screen of OpenMediaVault.
+
 ![OMV](Images/OpenMediaVault.png)
 - *Default User: admin
 - *Default Password: openmediavault
@@ -118,6 +122,7 @@ How to setup your own Network Attached Storage (NAS) on a Raspberry Pi using Ope
 
 - ## Step 9 (File System)
 -  Prior to establishing the file system we will *need* to **wipe** the HDD, OpenMediaVault requires this for mounting purposes. In the **Storage** section, **Disks**, select the **HDD**, and choose wipe, *quick* will meet the requirements unless you want to conduct a *secure* wipe.
+
 ![storage](Images/storage.png)
 
 - After it has completed, **Mount** the file system and **Save**.
@@ -127,6 +132,7 @@ How to setup your own Network Attached Storage (NAS) on a Raspberry Pi using Ope
 
 - ## Step 10 (Shared Folders)
 - Staying in the **Storage** area, in **Shared Folders**, **Create**, give the directory a name, select the file system that was just created, any additional paths required, change permissions as needed, add tags.
+
 ![storage](Images/SharedFolder.png)
 
 ![storage](Images/SharedFolder2.png)
@@ -138,6 +144,7 @@ How to setup your own Network Attached Storage (NAS) on a Raspberry Pi using Ope
 - If its for an older system/network there is a setting within **Advanced Settings** for enabling NetBIOS and WINS server, I will not be enabling those.
 - **Save** is located at the very bottom.
 - **Accept** pending changes on the yellow banner.
+
 ![storage](Images/Services.png)
 
 - *You can enable NFS if there is a chance of a Linux based system being connected to the system.
@@ -147,6 +154,7 @@ How to setup your own Network Attached Storage (NAS) on a Raspberry Pi using Ope
 - The rest of the options I left as default.
 - **Save** is located at the very bottom again.
 - **Accept** pending changes on the yellow banner.
+
 ![storage](Images/SharedFolders3.png)
 
 - ## Step 13 (Access)
