@@ -158,7 +158,7 @@ This project involves setting up a cost-effective Network Attached Storage (NAS)
 ![storage](Images/SharedFolders3.png)
 
 - ## Step 13 (Access)
-- When accessing from your PC it will be found within **Network**, when you log in it will be your **User** and **Password** for **OpenMediaVault**.
+- To access the NAS from your PC, navigate to the **Network** section, where the OpenMediaVault server will be listed. When prompted for credentials, enter your assigned **OpenMediaVault** **username** and **password** to log in securely.
 
 
 ### Addtional Information
