@@ -74,12 +74,12 @@ This project involves setting up a cost-effective Network Attached Storage (NAS)
 ```bash
 # hostname -I
 ```
-This command will display the IP address(es) assigned to your Raspberry Pi. Use the IPv4 address listed (usually something like 192.168.x.x or 10.x.x.x) to access the device remotely (for example, via SSH with PuTTY from your PC).
-Alternatively, you can also run:
+- This command will display the IP address(es) assigned to your Raspberry Pi. Use the IPv4 address listed (usually something like 192.168.x.x or 10.x.x.x) to access the device remotely (for example, via SSH with PuTTY from your PC).
+- Alternatively, you can also run:
 ```bash
 # ifconfig
 ```
-or
+- or
 ```bash
 # ip addr show
 ```
