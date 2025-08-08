@@ -173,4 +173,4 @@ This project involves setting up a cost-effective Network Attached Storage (NAS)
 
 - [Manual Raspberry Pi OS install](https://www.raspberrypi.com/software/)
 
-- [Youtube Video The ultimate Raspberry Pi NAS build for 2025!](https://www.youtube.com/watch?v=xYqkfYmJJ6w&t=562s)
+- [Youtube Video 'The ultimate Raspberry Pi NAS build for 2025!'](https://www.youtube.com/watch?v=xYqkfYmJJ6w&t=562s)
