@@ -161,8 +161,8 @@ How to setup your own Network Attached Storage (NAS) on a Raspberry Pi using Ope
 
 ### Addtional Information
 
-##[OpenMediaVault FAQs](https://forum.openmediavault.org/index.php?thread/5594-openmediavault-faq/)
-##[OpenMediaVault New User Guide](https://docs.openmediavault.org/en/5.x/new_user_guide/newuserguide.html)
-##[OpenMediaVault Wiki](https://wiki.friendlyelec.com/wiki/index.php/Getting_Started_with_OpenMediaVault)
-##[Enable SSH on Raspberry Pi](https://www.raspberrypi.org/documentation/remote-access/ssh/README.md)
-##[Manual Raspberry Pi OS install](https://www.raspberrypi.com/software/)
+-##[OpenMediaVault FAQs](https://forum.openmediavault.org/index.php?thread/5594-openmediavault-faq/)
+-##[OpenMediaVault New User Guide](https://docs.openmediavault.org/en/5.x/new_user_guide/newuserguide.html)
+-##[OpenMediaVault Wiki](https://wiki.friendlyelec.com/wiki/index.php/Getting_Started_with_OpenMediaVault)
+-##[Enable SSH on Raspberry Pi](https://www.raspberrypi.org/documentation/remote-access/ssh/README.md)
+-##[Manual Raspberry Pi OS install](https://www.raspberrypi.com/software/)
